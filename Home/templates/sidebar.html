@@ -1,0 +1,67 @@
+{% load static %}
+{% load i18n %}
+
+<!-- NAVIGATION -->
+<div id="navigation">
+    <!-- container -->
+    <div class="container">
+        <div id="responsive-nav">
+            <!-- category nav -->
+            {% if page %}
+                <div class="category-nav">
+            {% else %}
+                <div class="category-nav show-on-click">
+            {% endif %}
+
+            <span class="category-header">{% trans "Categories" %} <i class="fa fa-list"></i></span>
+
+
+            {% load myapptags %}
+            {% if LANGUAGE_CODE is None %}
+                {% get_current_language as LANGUAGE_CODE %}
+                {% categoryTree 0 '' LANGUAGE_CODE as category %}
+            {% else %}
+                {% categoryTree 0 '' 'en' as category %}
+            {% endif %}
+
+
+            <ul class="category-list">
+                {{ category | safe  }}
+            </ul>
+
+            </div>
+            <!-- /category nav -->
+
+            <!-- menu nav -->
+            <div class="menu-nav">
+                <span class="menu-header">Menu <i class="fa fa-bars"></i></span>
+                <ul class="menu-list">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+
+                    {% if user.is_authenticated %}
+                        <li class="dropdown default-dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">My Account <i class="fa fa-caret-down"></i></a>
+                            <ul class="custom-menu">
+                                <li><a href="{% url 'user_index' %}"><i class="fa fa-user-o"></i> My Profile</a></li>
+                                <li><a href="{% url 'user_orders' %}"><i class="fa fa-exchange"></i> My Orders</a></li>
+                                <li><a href="{% url 'user_comments' %}"><i class="fa fa-check"></i> My Comments</a></li>
+                                <li><a href="{% url 'logout' %}"><i class="fa fa-unlock-alt"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                        <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                    {% endif %}
+
+                    <li><a href="{% url 'faq' %}">FAQ</a></li>
+                    <li><a href="{% url 'contactus' %}#newsletter">Stay Connected</a></li>
+                </ul>
+            </div>
+            <!-- menu nav -->
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /NAVIGATION -->

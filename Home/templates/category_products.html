@@ -1,0 +1,300 @@
+{% extends 'homebase.html' %}
+{% load currency %}
+{% block title %}{{ catdata.title }} Products{% endblock %}
+{% block description %} {{ catdata.description }} {% endblock %}
+{% block keywords %} {{ category.keywords }} {% endblock %}
+
+{% block sidebar %} {% include 'sidebar.html' %} {% endblock %}
+
+{% block body %}
+
+	<!-- BREADCRUMB -->
+	<div id="breadcrumb">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="/">Home</a></li>
+				<li class="active">{{ catdata.title }} Products </li>
+			</ul>
+		</div>
+	</div>
+	<!-- /BREADCRUMB -->
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- ASIDE -->
+				<div id="aside" class="col-md-3">
+					<!-- aside widget -->
+					<div class="aside">
+						<h3 class="aside-title">Best Sellers</h3>
+						<ul class="filter-list">
+							<li><span class="text-uppercase">Colors</span></li>
+							<li><a href="#" style="color:#FFF; background-color:#8A2454;" title="Dark Red">Burgundy</a></li>
+							<li><a href="#" style="color:#FFF; background-color:#475984;" title="Navy Blue">Navy</a></li>
+							<li><a href="#" style="color:#FFF; background-color:#BF6989;" title="Rose Pink">Rose</a></li>
+							<li><a href="#" style="color:#FFF; background-color:#9A54D8;" title="Purple">Purple</a></li>
+								<h2 class="product-name"><a href="#" title="View product details">Premium Quality Product</a></h2>
+							<li><a href="#" title="Adidas Performance & Style">Adidas</a></li>
+							<li><a href="#" title="Ralph Lauren Polo">Polo</a></li>
+							<li><a href="#" title="Lacoste Fashion">Lacost</a></li>
+							<li><span class="text-uppercase">Size</span></li>
+							<li><a href="#" title="Extra Small">XS</a></li>
+							<li><a href="#" title="Extra Large">XL</a></li>
+						</ul>
+
+						<ul class="filter-list">
+							<li><span class="text-uppercase">Price Range</span></li>
+							<li><a href="#">Minimum: $20.00</a></li>
+							<li><a href="#">Maximum: $120.00</a></li>
+						</ul>
+
+						<ul class="filter-list">
+							<li><span class="text-uppercase">Category</span></li>
+							<li><a href="#">Men's Fashion</a></li>
+						</ul>
+								<h2 class="product-name"><a href="#" title="View product details">Featured Product</a></h2>
+						<button class="primary-btn">Reset Filters</button>
+					</div>
+					<!-- /aside widget -->
+
+					<!-- aside widget -->
+					<div class="aside">
+						<h3 class="aside-title">Price Range</h3>
+						<div id="price-slider" title="Drag to set price range"></div>
+					</div>
+					<!-- aside widget -->
+
+					<!-- aside widget -->
+					<div class="aside">
+						<h3 class="aside-title">Available Colors</h3>
+						<ul class="color-option">
+							<li><a href="#" style="background-color:#475984;" title="Navy"></a></li>
+							<li><a href="#" style="background-color:#8A2454;" title="Burgundy"></a></li>
+							<li class="active"><a href="#" style="background-color:#BF6989;" title="Rose"></a></li>
+							<li><a href="#" style="background-color:#9A54D8;" title="Purple"></a></li>
+							<li><a href="#" style="background-color:#675F52;" title="Brown"></a></li>
+							<li><a href="#" style="background-color:#050505;" title="Black"></a></li>
+							<li><a href="#" style="background-color:#D5B47B;" title="Gold"></a></li>
+						</ul>
+					</div>
+					<!-- /aside widget -->
+
+					<!-- aside widget -->
+					<div class="aside">
+						<h3 class="aside-title">Available Sizes</h3>
+						<ul class="size-option">
+							<li class="active"><a href="#" title="Small">S</a></li>
+							<li class="active"><a href="#" title="Extra Large">XL</a></li>
+							<li><a href="#" title="Slim Large">SL</a></li>
+						</ul>
+					</div>
+					<!-- /aside widget -->
+
+					<!-- aside widget -->
+					<div class="aside">
+						<h3 class="aside-title">Filter by Brand</h3>
+						<ul class="list-links">
+							<li><a href="#">Nike</a></li>
+							<li><a href="#">Adidas</a></li>
+							<li><a href="#">Polo</a></li>
+							<li><a href="#">Lacost</a></li>
+						</ul>
+					</div>
+					<!-- /aside widget -->
+
+					<!-- aside widget -->
+					<div class="aside">
+						<h3 class="aside-title">Filter by Gender</h3>
+						<ul class="list-links">
+							<li class="active"><a href="#" title="Men's Collection">Men's Fashion</a></li>
+							<li><a href="#" title="Women's Collection">Women's Fashion</a></li>
+						</ul>
+					</div>
+					<!-- /aside widget -->
+
+					<!-- aside widget -->
+					<div class="aside">
+						<h3 class="aside-title">Top Rated Product</h3>
+						<!-- widget product -->
+						<div class="product product-widget">
+							<div class="product-thumb">
+								<img src="./img/thumb-product01.jpg" alt="">
+							</div>
+							<div class="product-body">
+								<h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
+								<h3 class="product-price">$32.50 <del class="product-old-price">$45.00</del></h3>
+								<div class="product-rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o empty"></i>
+								</div>
+							</div>
+						</div>
+						<!-- /widget product -->
+
+						<!-- widget product -->
+						<div class="product product-widget">
+							<div class="product-thumb">
+								<img src="./img/thumb-product01.jpg" alt="">
+							</div>
+							<div class="product-body">
+								<h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
+								<h3 class="product-price">$32.50</h3>
+								<div class="product-rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-o empty"></i>
+								</div>
+							</div>
+						</div>
+						<!-- /widget product -->
+					</div>
+					<!-- /aside widget -->
+				</div>
+				<!-- /ASIDE -->
+
+				<!-- MAIN -->
+				<div id="main" class="col-md-9">
+					<!-- store top filter -->
+					<div class="store-filter clearfix">
+						<div class="pull-left">
+							<div class="row-filter">
+								<a href="#" title="Grid View"><i class="fa fa-th-large"></i></a>
+								<a href="#" class="active" title="List View"><i class="fa fa-bars"></i></a>
+							</div>
+							<div class="sort-filter">
+								<span class="text-uppercase">Sort Products By:</span>
+								<select class="input">
+										<option value="0">Default Order</option>
+										<option value="1">Price: Low to High</option>
+										<option value="2">Price: High to Low</option>
+										<option value="3">Rating: High to Low</option>
+										<option value="4">Newest First</option>
+									</select>
+								<a href="#" class="main-btn icon-btn" title="Toggle Sort Order"><i class="fa fa-arrow-down"></i></a>
+							</div>
+						</div>
+						<div class="pull-right">
+							<div class="page-filter">
+								<span class="text-uppercase">Items per page:</span>
+								<select class="input">
+										<option value="0">10</option>
+										<option value="1">20</option>
+										<option value="2">30</option>
+									</select>
+							</div>
+							<ul class="store-pages">
+								<li><span class="text-uppercase">Go to Page:</span></li>
+								<li class="active">1</li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#" title="Next Page"><i class="fa fa-caret-right"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /store top filter -->
+
+					<!-- STORE -->
+					<div id="store">
+						<!-- row -->
+						<div class="row">
+
+                            <div class="col-md-12">
+						<div class="order-summary clearfix">
+							<div class="section-title">
+									<h3 class="title">Available Products</h3>
+									<p class="text-muted">Browse our selection of quality products</p>
+							</div>
+							<table class="shopping-cart-table table">
+								<thead>
+									<tr>
+										<tr>
+											<td class="thumb"><a href="{% url 'product_detail' rs.id rs.slug %}" title="View product details">
+												<img src="{{ rs.image.url }}" alt="{{ rs.title }}" style="height: 100px">
+											</a></td>
+
+										<th class="text-right"></th>
+									</tr>
+								</thead>
+								<tbody>
+
+                                {% for rs in products %}
+									<tr>
+										<td class="thumb"><a href="{% url 'product_detail' rs.id rs.slug %}">
+                                            <img src="{{ rs.image.url }}" alt="" style="height: 100px">
+                                        </a></td>
+										<td class="details"> <a href="{% url 'product_detail' rs.id rs.slug %}">{{ rs.title }}</a>	</td>
+										<td class="price text-center"><strong>{{ rs.price|currency:request.session.currency }} {{ request.session.currency }}</strong><br><del class="font-weak"><small>$40.00</small></del></td>
+										   <td class="qty text-center"><input class="input" type="number" value="1" min="1" title="Choose quantity"></td>
+
+										<td class="text-right"><a href="{% url "addtoshopcart" rs.id  %}" class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</a></td>
+									</tr>
+                                    {% endfor %}
+
+								</tbody>
+
+							</table>
+
+						</div>
+
+					</div>
+
+						</div>
+						<!-- /row -->
+					</div>
+					<!-- /STORE -->
+
+					<!-- store bottom filter -->
+					<div class="store-filter clearfix">
+						<div class="pull-left">
+							<div class="row-filter">
+								<a href="#" title="Grid View"><i class="fa fa-th-large"></i></a>
+								<a href="#" class="active" title="List View"><i class="fa fa-bars"></i></a>
+							</div>
+							<div class="sort-filter">
+								<span class="text-uppercase">Sort Products By:</span>
+								<select class="input">
+										<option value="0">Default Order</option>
+										<option value="1">Price: Low to High</option>
+										<option value="2">Price: High to Low</option>
+										<option value="3">Rating: High to Low</option>
+										<option value="4">Newest First</option>
+									</select>
+								<a href="#" class="main-btn icon-btn" title="Toggle Sort Order"><i class="fa fa-arrow-down"></i></a>
+							</div>
+						</div>
+						<div class="pull-right">
+							<div class="page-filter">
+								<span class="text-uppercase">Items per page:</span>
+								<select class="input">
+										<option value="0">10</option>
+										<option value="1">20</option>
+										<option value="2">30</option>
+									</select>
+							</div>
+							<ul class="store-pages">
+								<li><span class="text-uppercase">Go to Page:</span></li>
+								<li class="active">1</li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#" title="Next Page"><i class="fa fa-caret-right"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /store bottom filter -->
+				</div>
+				<!-- /MAIN -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /section -->
+
+{% endblock %}

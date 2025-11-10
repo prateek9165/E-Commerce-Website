@@ -1,0 +1,57 @@
+# English translations for javascript strings
+msgid ""
+msgstr ""
+"Project-Id-Version: django-shop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-10 14:30+0000\n"
+"PO-Revision-Date: 2025-11-10 14:30+0000\n"
+"Last-Translator: AI Assistant\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Product details
+msgid "Size:"
+msgstr "Size:"
+
+msgid "Color:"
+msgstr "Color:"
+
+msgid "Details"
+msgstr "Details"
+
+msgid "Close"
+msgstr "Close"
+
+# Search
+msgid "Enter your keyword"
+msgstr "Enter your keyword"
+
+msgid "Search"
+msgstr "Search"
+
+# Cart
+msgid "Delete! Are you sure?"
+msgstr "Delete! Are you sure?"
+
+msgid "No items in cart"
+msgstr "No items in cart"
+
+# User messages
+msgid "Your message has been sent. Thank you for your message."
+msgstr "Your message has been sent. Thank you for your message."
+
+msgid "Login Error! Username or Password is incorrect"
+msgstr "Login Error! Username or Password is incorrect"
+
+msgid "Your account has been created!"
+msgstr "Your account has been created!"
+
+msgid "Your account has been updated!"
+msgstr "Your account has been updated!"
+
+msgid "Your password was successfully updated!"
+msgstr "Your password was successfully updated!"

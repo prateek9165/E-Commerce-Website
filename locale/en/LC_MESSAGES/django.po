@@ -1,0 +1,72 @@
+# English translations for django-shop.
+# This file is distributed under the same license as the django-shop package.
+msgid ""
+msgstr ""
+"Project-Id-Version: django-shop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-10 14:30+0000\n"
+"PO-Revision-Date: 2025-11-10 14:30+0000\n"
+"Last-Translator: AI Assistant\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Welcome to E-shop!"
+msgstr "Welcome to E-shop!"
+
+msgid "Store"
+msgstr "Store"
+
+msgid "Newsletter" 
+msgstr "Newsletter"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "All Categories"
+msgstr "All Categories"
+
+msgid "My Account"
+msgstr "My Account"
+
+msgid "My Favorites"
+msgstr "My Favorites"
+
+msgid "My Orders"
+msgstr "My Orders"
+
+msgid "My Comments"
+msgstr "My Comments"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "My Cart:"
+msgstr "My Cart:"
+
+msgid "Contact Form"
+msgstr "Contact Form"
+
+msgid "Contact Information"
+msgstr "Contact Information"
+
+msgid "SEND FORM"
+msgstr "SEND FORM"
+
+msgid "About Us"
+msgstr "About Us"
+
+msgid "User Login"
+msgstr "User Login"
+
+msgid "Login Form"
+msgstr "Login Form"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Contact Page"
+msgstr "Contact Page"
